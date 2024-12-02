@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #activate virtual env
+echo "Enter venv name"
 read env_name
 
 source $env_name/scripts/activate
@@ -18,6 +19,7 @@ cd $project_name
 git init
 
 #add_repo
+echo "Enter repo name"
 read repo_name
 git remote add origin https://github.com/Abdul12majid/$repo_name.git
 
